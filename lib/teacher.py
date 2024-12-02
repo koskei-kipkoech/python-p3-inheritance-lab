@@ -20,7 +20,7 @@ class Teacher(User):
 ]
     def __init__(self, first_name, last_name):
         super().__init__(first_name, last_name)
-        self.knowledge = Teacher.knowledge  # copy the list to avoid modifying it in the teacher instance.  # This is to simulate sharing knowledge between different teacher instances.  # In a real-world application, you would want to use a database or a shared resource to store and share knowledge.  # In this example, knowledge is stored in a class variable for simplicity.  # In a real-world application, you would use a database or a shared resource to store and
+        self.knowledge = Teacher.knowledge  
 
     def teach(self):
         return random.choice(self.knowledge)
